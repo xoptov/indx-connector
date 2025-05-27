@@ -17,17 +17,17 @@ class Credential
         $this->wmid = $wmid;
     }
 
-    public function getLogin(): string
+    public function login(): string
     {
         return $this->login;
     }
 
-    public function getPassword(): string
+    public function password(): string
     {
         return $this->password;
     }
 
-    public function getWmid(): string
+    public function wmid(): string
     {
         return $this->wmid;
     }

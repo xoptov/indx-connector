@@ -6,6 +6,6 @@ class Signer
 {
     public function sign(array $data): string
     {
-        return '';
+        return hash('sha256', base64_encode(implode(';', $data)));
     }
 }

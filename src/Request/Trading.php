@@ -6,25 +6,25 @@ use DateTimeInterface;
 
 class Trading
 {
-    private int $assetId;
+    private int $toolId;
 
     private DateTimeInterface $dateStart;
 
     private DateTimeInterface $dateEnd;
 
-    public function __construct(int $assetId, DateTimeInterface $dateStart, DateTimeInterface $dateEnd)
+    public function __construct(int $toolId, DateTimeInterface $dateStart, DateTimeInterface $dateEnd)
     {
-        $this->assetId = $assetId;
+        $this->toolId = $toolId;
         $this->dateStart = $dateStart;
         $this->dateEnd = $dateEnd;
     }
 
-    public function getParams(): array
+    public function params(): array
     {
         return [
-            'ID' => $this->assetId,
-            'DateStart' => $this->dateStart->format('c'),
-            'DateEnd' => $this->dateEnd->format('c'),
+            'ID' => $this->toolId,
+            'DateStart' => $this->dateStart->format('Ymd'),
+            'DateEnd' => $this->dateEnd->format('Ymd'),
         ];
     }
 }

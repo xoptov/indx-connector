@@ -2,7 +2,7 @@
 
 namespace Xoptov\IndxConnector\Response;
 
-class Response
+class Result
 {
     const STATUS_OK = 0;
 
@@ -42,17 +42,17 @@ class Response
         return self::STATUS_REJECT === $this->status;
     }
 
-    public function getCode(): ?int
+    public function code(): ?int
     {
         return $this->code;
     }
 
-    public function getDesc(): ?string
+    public function desc(): ?string
     {
         return $this->desc;
     }
 
-    public function getPayload(): ?object
+    public function payload(): ?object
     {
         return $this->payload;
     }
