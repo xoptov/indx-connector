@@ -1,0 +1,19 @@
+{
+    "name": "xoptov/indx-connector",
+    "description": "Connector for Webmoney INDX Exchange",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Xoptov\\IndxConnector\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Maksim Khortov",
+            "email": "xoptov@mail.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
