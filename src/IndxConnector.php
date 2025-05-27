@@ -33,7 +33,7 @@ class IndxConnector
 
     private ?CurlHandle $ch = null;
 
-    public static function create(
+    public static function getInstance(
         Signer $signer, BaseUrl $baseUrl, Credential $credential, ?array $options = []
     ): self {
         if (static::$instance) {
